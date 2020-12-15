@@ -140,7 +140,7 @@ componentDidMount(){
           title: 'Title',
           dataIndex: 'title',
           key: 'title',
-          render: text => <a >{text}</a>,
+          render: text => <p>{text}</p>,
           ...this.getColumnSearchProps('title')
         },
       
