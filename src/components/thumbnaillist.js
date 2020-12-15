@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Table,Tag, Space , Input, Button } from 'antd';
+import { Table, Space , Input, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import Highlighter from 'react-highlight-words';
 import  ModalPopup from "./modal";
@@ -130,7 +130,7 @@ componentDidMount(){
           render: (text,record) => {
             return (
               <>
-                <img  onClick={()=>{this.imageinfo(record)}} style={{cursor:"pointer"}} src = {text}/>
+                <img  alt="gigig" onClick={()=>{this.imageinfo(record)}} style={{cursor:"pointer"}} src = {text}/>
                 </>
             )
           }

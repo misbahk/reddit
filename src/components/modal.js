@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Modal, Button } from 'antd';
+import React from 'react';
+import { Modal } from 'antd';
 import ModalHeader from 'react-bootstrap/esm/ModalHeader';
 
 class Modalpop extends React.Component {
@@ -27,7 +27,7 @@ class Modalpop extends React.Component {
 
   render() {
     const { visible = false, data =[], closeModal }= this.props;
-    const { title='', thumbnail=null, url, author_fullname, author, id, name, score, upvote_ratio, ups} = data;
+    const { title='', url, author_fullname, author, id, name, score, upvote_ratio, ups} = data;
     console.log(visible,data);
     return (
       <>
@@ -42,7 +42,7 @@ class Modalpop extends React.Component {
 
 </ModalHeader>
           <center>
-          <img style={{width:"18rem", height:"21rem"}} src={url}/>
+          <img  alt="gigi" style={{width:"18rem", height:"21rem"}} src={url}/>
           </center>
 <br/>
 <div class="row">
